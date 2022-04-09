@@ -22,7 +22,7 @@ Untuk dapat membuat proyek menggunakan Dashboard, Anda bisa membuat akun baru te
 
 https://iot.nusabot.id/login
 
-![register](C:\Users\User\OneDrive\Dokumen\dashboardiot-doc\docs\register.png)
+![register](https://github.com/nusabot-iot/dashboardiot-doc/blob/master/docs/register.png?raw=true)
 
 Setelah berhasil membuat akun maka Anda bisa langsung *login* menggunakan akun tersebut.
 
@@ -83,13 +83,15 @@ Setelah Anda mengetahui mengenai konsep pada Dashboard, maka dapat disimpulkan m
 
 # Sidebar
 
-![sidebar](C:\Users\User\OneDrive\Dokumen\dashboardiot-doc\docs\sidebar.png)
+![sidebar](https://github.com/nusabot-iot/dashboardiot-doc/blob/master/docs/sidebar.png?raw=true)
 
 Saat Anda berhasil masuk maka Anda akan melihat sidebar di sebelah kiri. Disini adalah tempat Anda melakukan navigasi ke berbagai fasilitas yang ada pada Dashboard.
 
 
 
 # Proyek
+
+![Sidebar Proyek](https://github.com/nusabot-iot/dashboardiot-doc/blob/master/docs/proyek-sidebar.png?raw=true)
 
 ## Atur Proyek
 
@@ -112,7 +114,7 @@ Pada menu ini Anda bisa membuat proyek dan mengatur seluruh proyek milik Anda. U
 
 Setelah membuat proyek maka Anda bisa melihat seluruh proyek yang sudah dibuat.
 
-![proyek](C:\Users\User\OneDrive\Dokumen\dashboardiot-doc\docs\proyek.png)
+![proyek](https://github.com/nusabot-iot/dashboardiot-doc/blob/master/docs/proyek.png?raw=true)
 
 Sekarang Anda bisa melihat pada sidebar seluruh proyek yang sudah dibuat. Klik pada proyek tersebut untuk mengatur proyek Anda seperti menambahkan halaman dan mengatur widget.
 
@@ -136,10 +138,30 @@ Untuk menambah halaman dapat dilakukan dengan mengklik tombol ```Klik Untuk Tamb
 
  Setelah membuat halaman maka Anda bisa melihat seluruh halaman yang sudah dibuat.
 
-![laman](C:\Users\User\OneDrive\Dokumen\dashboardiot-doc\docs\laman.png)
+![laman](https://github.com/nusabot-iot/dashboardiot-doc/blob/master/docs/laman.png?raw=true)
 
 > Untuk menghapus halaman Anda harus menghapus terlebih dahulu seluruh widget yang ada pada halaman tersebut.
 
 
 
 ## Atur Widget
+
+Anda bisa mengklik tombol atur widget yang ada pada halaman. Disini Anda bisa menambah dan menghapus widget. Untuk menambah widget maka perlu mengklik tombol ```Tambah```.
+
+| Nama Masukan | Keterangan                                                   | Wajib |
+| ------------ | ------------------------------------------------------------ | ----- |
+| Nama Widget  | Sebagai indentifier setiap widget untuk memudahkan Anda dan personil tim mengetahui widget tersebut akan digunakan untuk mengambil data apa atau untuk mengirim data apa. | Ya    |
+| Judul Widget | Judul widget akan tampil pada sisi end-user. Judul widget memudahkan end-user untuk mengetahui widget ini digunakan untuk menampilkan data apa. | Ya    |
+| Jenis Widget | Pilihan jenis widget yang ingin digunakan untuk menampilkan atau mengirim data. | Ya    |
+
+
+
+
+
+
+
+
+
+
+
+# Jenis Widget
