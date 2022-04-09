@@ -1,24 +1,16 @@
-<h1 id="cover-heading">
-  DocsifyJS Template  <!-- TODO: Update title -->
-</h1>
+![Dashboard IoT](https://dashboard.nusabot.com/assets/images/logo-2.svg)
 
-[![GitHub tags](https://img.shields.io/github/tag/MichaelCurrin/docsify-js-template.svg)](https://GitHub.com/MichaelCurrin/docsify-js-template/tags/) <!-- TODO: Update username and repo name -->
-
->  Starter template for a Markdown-based docs site <!-- TODO: Replace with your description -->
+>  Memanjakan para developer IoT dari kesulitan pemrograman. <!-- TODO: Replace with your description -->
 
 
 <!-- TODO: Update to match your project's benefits/features. Git emojis work great here. -->
 
-- :hourglass_flowing_sand: Quickly set up an elegant, responsive site
-- :open_file_folder: Use your markdown docs as content
-- :sparkles: No compilation step and no templating syntax to learn
-- :nut_and_bolt: Built on [DocsifyJS](https://docsify.js.org/)
-- :pushpin: The library loads in the browser - no local dependencies
-- :cloud: Serve locally and on GitHub Pages or Netlify
+- :hourglass_flowing_sand: Hampir tanpa perlu melakukan pemrograman sama sekali
+- :sparkles: Tanpa perlu menyiapkan infrastruktur IoT
+- :cloud: Mendukung hampir semua perangkat karena menggunakan protokol MQTT
 
-
-[Use this template](https://github.com/MichaelCurrin/docsify-js-template/generate) <!-- TODO: Remove on your copy of this template.-->
-[Get Started](#docsifyjs-template) <!-- TODO: Use ID of your homepage heading -->
+[Buat Akun](https://iot.nusabot.id) <!-- TODO: Remove on your copy of this template.-->
+[Mulai Menggunakan Dashboard](#pengenalan) <!-- TODO: Use ID of your homepage heading -->
 
 <!-- TODO: Set your background color or image. -->
 ![color](#b3d9f8)

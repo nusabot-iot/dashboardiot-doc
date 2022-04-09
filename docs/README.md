@@ -1,86 +1,145 @@
-<!-- TODO: Update with your values. -->
-# DocsifyJS Template
-> Starter template for a Markdown-based docs site
+# Pengenalan
+> Dokumentasi / manual penggunaan ini diperuntukan bagi para pengembang yang menggunakan Dashboard IoT by Nusabot. Bagi para pengembang yang membuat proyek IoT bagi klien masing-masing maka perlu membuat manual penggunaan sendiri terkait dengan proyek yang dibuat.
 
- <!-- TODO: Update repo links and change license type if needed. -->
-[![GitHub tag](https://img.shields.io/github/tag/MichaelCurrin/docsify-js-template.svg)](https://GitHub.com/MichaelCurrin/docsify-js-template/tags/)
-[![License](https://img.shields.io/badge/License-MIT-blue.svg)](https://github.com/MichaelCurrin/docsify-js-template/blob/master/README#license)
+Dashboard adalah platform IoT yang diperuntukan bagi para developer IoT khusus nya pemula untuk membuat prototype sampai dengan mempublikasikannya sebagai produk jadi. Dashboard dapat menampilkan data sensor dan mengendalikan aktuator secara *realtime* melalui jaringan internet dimanapun dengan menggunakan protokol MQTT.
 
-[![Made with latest Docsify](https://img.shields.io/npm/v/docsify/latest?label=docsify)](https://docsify.js.org/)
+Dengan menggunakan Dasboard, siapapun bisa membuat perangkat IoT tanpa harus bersusah payah menyiapkan infrastruktur IoT nya.
 
+Anda bisa mengundang rekan tim Anda dengan jumlah personil tak terbatas untuk bersama membuat proyek di Dashboard sehingga proyek dapat dikerjakan bersama.
 
-<!-- TODO: You can delete the About and Create a Docsify site sections if you create a new project from this template -->
+Proyek yang sudah dibuat dengan Dashboard siap untuk Anda publikasikan bagi *end-user*. Baik itu anggota keluarga, karyawan Anda, atau seseorang yang telah membayar untuk membeli produk Anda. Kami tidak memberikan batasan jumlah pengguna proyek yang sudah Anda buat di Dashboard.
 
-## About
-
-This is a template for a simple but elegant docs site built on _Docsify_ which magically turns your markdown in your `docs` directory into a docs site. 
-
-This is a statically-built site - just commit and push and your Github Pages site will re-deploy.
-
-_Docsify.js_ runs as a _Single-Page Application_ on `index.html` - it relies on JavaScript to pull in content from markdown file, within the app shell. This gives a modern progressive web-app experience for instant page loads. But, this **not** SEO-friendly as crawlers don't like to or can't load JavaScript. So use a static site instead if you need to be found on search engines.
-
-If you want learn about _Docsify_ and how to customize a docs like this, follow this tutorial:
-
-<div align="center">
-    <a href="https://michaelcurrin.github.io/docsify-js-tutorial/">
-        <img src="https://img.shields.io/badge/Teach_me-DocsifyJS_tutorial-blue" 
-            alt="DocsifyJS tutorial badge"
-            title="Go to tutorial">
-    </a>
-</div>
+## Memulai Cepat
+> Dashboard memiliki 2 URL yang dapat Anda gunakan, keduanya memiliki fungsi yang berbeda.
+>
+> https://iot.nusabot.id sebagai tempat untuk Anda membuat dan mengatur proyek
+>
+> https://dashboard.nusabot.com sebagai URL yang dapat Anda bagikan kepada pengguna proyek Anda. Proyek yang sudah dibuat dapat digunakan melalui link ini.
 
 
-## Create a Docsify site
-> How to create your own docs site like this one
 
-Click the button below to create your own copy of this repo.
+Untuk dapat membuat proyek menggunakan Dashboard, Anda bisa membuat akun baru terlebih dahulu.
 
-<div align="center">
-    <a href="https://github.com/MichaelCurrin/docsify-js-template/generate">
-        <img src="https://img.shields.io/badge/Generate-Use_this_template-2ea44f?style=for-the-badge" 
-            alt="Use this template"
-            title="Create repo from template">
-    </a>
-</div>
+https://iot.nusabot.id/login
 
-<br>
+![register](C:\Users\User\OneDrive\Dokumen\dashboardiot-doc\docs\register.png)
 
-Then follow instructions in the original GitHub repo linked below. The `README.md` file covers how to set up docs site like this one.
+Setelah berhasil membuat akun maka Anda bisa langsung *login* menggunakan akun tersebut.
 
-<div align="center">
-    <a href="https://github.com/MichaelCurrin/docsify-js-template">
-        <img src="https://img.shields.io/static/v1?label=MichaelCurrin&message=docsify-js-template&color=blue&style=for-the-badge&logo=github" 
-            alt="MichaelCurrin - docsify-js-template"
-            title="Go to template repo">
-    </a>
-</div>
+# Langkah Selanjutnya
 
+Selamat, Anda telah berhasil membuat akun Dashboard, disini Anda bisa mengatur proyek dengan Dashboard.
 
-## Preview
+Dashboard menggunakan sistem yang kami sebut dengan **Token**. Dimana token ini adalah saldo yang terdapat pada akun Anda. Token ini digunakan untuk **menampilkan** data dari perangkat keras IoT Anda (misalnya sensor) maupun untuk **mengendalikan** aktuator dan *display* pada perangkat keras IoT Anda (misalnya Servo dan LCD). Semakin banyak data yang ingin Anda tampilkan, maka semakin banyak juga Token yang dibutuhkan. Begitu juga untuk mengendalikan aktuator.
 
-_TODO: Complete with your content - such as a screenshot of your app or command-line usage. You can also rename Preview to Sample._
+Token terbagi menjadi 2 jenis.
 
+| Jenis Token  | Penjelasan                                                   |
+| ------------ | ------------------------------------------------------------ |
+| Token Akun   | Token yang dimiliki oleh setiap akun di Dashboard.<br />Token ini dapat diubah menjadi Token Proyek maupun ditransfer ke akun lain.<br />Token akun tidak dapat digunakan oleh akun lain kecuali melakukan transfer token. |
+| Token Proyek | Token yang terdapat pada setiap proyek yang dibuat.<br />Token ini dapat diubah menjadi Token Akun dan dapat digunakan oleh seluruh akun personil tim yang terlibat pada pembuatan proyek, namun jika token ini ingin diubah menjadi Token Akun maka hanya bisa dijadikan Token Akun pemilik proyek yang bersangkutan.<br />Token ini yang akan berkurang seiring dengan banyaknya tampilan untuk mengambil data dan mengirim data. |
 
-## Installation
+Selain Token, pada Dashboard juga Anda perlu mengenal komponen lain yaitu **Proyek, Halaman, dan Widget**.
 
-_TODO: Add your instructions here or link to an installation.md page._
+## Proyek
 
+Proyek adalah aplikasi yang ingin Anda buat menggunakan Dashboard. Bayangkan Anda memiliki 2 (dua) klien dimana masing-masing klien ingin dibuatkan sistem yang berbeda.
 
-## Usage
+> Klien A ingin dibuatkan sistem pemantau suhu di semua gudang milik perusahaannya.
+>
+> Klien B ingin dibuatkan sistem penyiram taman di seluruh taman yang ada di Kota Jakarta.
 
-_TODO: Add your instructions here or link to a usage.md page._
+Maka Anda perlu membuat 2 (dua) buah proyek. Proyek pertama untuk klien A dan proyek kedua untuk klien B.
+
+> **Dashboard tidak membatasi jumlah proyek yang dapat dibuat. Untuk membuat proyek, Token TIDAK AKAN dikurangi.**
 
 
-## Demo
 
-This section showcases some functionality of Docsify.
+## Halaman
 
-```bash
-echo "Hello, World"
-```
+Halaman adalah segmentasi atau bisa dikatakan sebagai sub-proyek. Setiap halaman dapat menampilkan data yang beragam sesuai kebutuhan sekaligus dapat menampilkan tombol sebagai input untuk mengendalikan aktuator.
 
-> Sample quote
+Kita ambil contoh pada klien A yang ingin dibuatkan sistem pemantau suhu di semua gudang milik perusahaannya. Ternyata klien A memiliki 10 gudang yang tersebar di seluruh Indonesia, maka Anda bisa membuat 10 halaman dimana setiap halaman akan berisi informasi mengenai suhu dari 1 (satu) gudang. Jika dibutuhkan, Anda juga bisa menampilkan data lain sesuai sensor dan aktuator yang ingin digunakan di setiap gudang nya.
 
-?> Sample hint
+> **Dashboard tidak membatasi jumlah halaman yang dapat dibuat. Untuk membuat halaman, Token TIDAK AKAN dikurangi.**
 
-!> Sample warning 
+
+
+## Widget
+
+Widget adalah sebuah objek yang dapat digunakan untuk menampilkan data maupun untuk mengirim data. Satu halaman dapat berisi banyak Widget, setiap widget yang Anda buat maka akan mengurangi saldo Token Proyek sesuai dengan jumlah token yang dibutuhkan pada setiap widget.
+
+Jika proyek Anda kekurangan token, maka Anda dapat mengubah Token Akun Anda menjadi Token Proyek.
+
+> **Hanya pemilik proyek yang dapat mengubah Token Proyek menjadi Token Akun dan sebaliknya**
+
+
+
+## Skema Penggunaan Dashboard
+
+Setelah Anda mengetahui mengenai konsep pada Dashboard, maka dapat disimpulkan melalui diagram berikut.
+
+
+
+# Sidebar
+
+![sidebar](C:\Users\User\OneDrive\Dokumen\dashboardiot-doc\docs\sidebar.png)
+
+Saat Anda berhasil masuk maka Anda akan melihat sidebar di sebelah kiri. Disini adalah tempat Anda melakukan navigasi ke berbagai fasilitas yang ada pada Dashboard.
+
+
+
+# Proyek
+
+## Atur Proyek
+
+Pada menu ini Anda bisa membuat proyek dan mengatur seluruh proyek milik Anda. Untuk menambahkan proyek baru Anda bisa meng-klik tombol ```Klik Untuk Membuat Proyek Baru```
+
+| Nama Masukan    | Keterangan                                                   | Nilai              | Wajib |
+| --------------- | ------------------------------------------------------------ | ------------------ | ----- |
+| Nama Proyek     | Nama dari proyek yang akan dibuat                            | Teks               | Ya    |
+| Status Proyek   | Status dari proyek yang akan dibuat. Jika memilih ```Privat```maka untuk dapat menggunakan proyek klien Anda harus melakukan login terlebih dahulu, namun tidak dengan ```Publik``` dimana siapapun dapat menggunakan proyek yang Anda buat. | Publik<br />Privat | Ya    |
+| Deskripsi       | Sebagai penjelasan singkat tentang proyek yang dibuat agar lebih mudah diingat dan dipahami terutama oleh personil tim. | Teks               | Tidak |
+| Kategori Proyek | Anda dapat mengkategorikan setiap proyek yang dibuat baik berdasarkan nama klien, jenis proyek, atau apapun terserah Anda. Kategori proyek untuk memudahkan Anda mencari proyek mana yang akan diatur. | Teks               | Ya    |
+| Ikon            | Ikon dari proyek Anda menggunakan Font Awesome yang dapat dipilih [disini](https://fontawesome.com/search?m=free). | Teks               | Tidak |
+| MQTT Broker     | Broker dari MQTT yang ingin digunakan untuk proyek ini. Broker yang digunakan harus memiliki fitur Websocket over TLS (wss://). Anda dapat menggunakan broker yang direkomendasikan oleh Dashboard. | Teks               | Ya    |
+| Port Websocket  | Port dari websocket broker.                                  | Angka              | Ya    |
+| Path            | Path dari websocket broker.                                  | Teks               | Tidak |
+| Username        | Username broker.                                             | Teks               | Tidak |
+| Password        | Password broker.                                             | Teks               | Tidak |
+| Kolaborator     | Daftar seluruh kolaborator dari proyek. Kolaborator adalah akun yang memiliki akses untuk membuat halaman dan widget pada proyek. Biasanya kolaborator adalah personil tim Anda.<br /><br />Anda bisa menambahkan sebanyak apapun kolaborator dengan mengetikan alamat email nya dan dipisahkan dengan koma. Pastikan alamat email sudah terdaftar pada platform Dashboard. | Teks               | Tidak |
+| Pengguna        | Daftar seluruh pengguna dari proyek. Pengguna adalah akun yang memiliki akses untuk menggunakan proyek Anda. Biasanya penggunakan adalah klien Anda.<br /><br />Anda bisa menambahkan sebanyak apapun pengguna dengan mengetikan alamat email nya dan dipisahkan dengan koma. Pastikan alamat email sudah terdaftar pada platform Dashboard. | Teks               | Tidak |
+
+Setelah membuat proyek maka Anda bisa melihat seluruh proyek yang sudah dibuat.
+
+![proyek](C:\Users\User\OneDrive\Dokumen\dashboardiot-doc\docs\proyek.png)
+
+Sekarang Anda bisa melihat pada sidebar seluruh proyek yang sudah dibuat. Klik pada proyek tersebut untuk mengatur proyek Anda seperti menambahkan halaman dan mengatur widget.
+
+
+
+## Atur Halaman
+
+Untuk mengatur halaman yang ada pada proyek, Anda perlu membuka menu ```Proyek Kamu``` yang ada pada sidebar lalu pilih proyek yang ingin diatur. Pada saat proyek baru dibuat, maka Token Proyek berjumlah 0. Anda harus menambahkan token proyek dengan cara mengklik tombol ```Tambah Token Proyek```, Dashboard akan melakukan konversi dari Token Akun menjadi Token Proyek sesuai dengan jumlah yang diinputkan.
+
+Anda juga dapat mengurangi Token Proyek dengan cara mengklik tombol ```Ambil Token Proyek```. Dashboard akan melakukan konversi dari Token Proyek menjadi Token Akun sesuai dengan jumlah yang diinputkan.
+
+Untuk menambah halaman dapat dilakukan dengan mengklik tombol ```Klik Untuk Tambah Laman Baru```
+
+| Nama Masukan        | Keterangan                                                   | Wajib |
+| ------------------- | ------------------------------------------------------------ | ----- |
+| Judul Laman         | Nama dari laman yang akan digunakan, Judul Laman akan ditampilkan pada aplikasi yang diakses oleh end-user atau klien Anda. | Ya    |
+| Subscribe Topic     | Topic dari MQTT yang akan disubscribe. Akan menggunakan single level wildcard pada akhir path dari topic. Seluruh data yang akan ditampilkan pada halaman ini akan menggunakan masukan ini. | Ya    |
+| Deskripsi           | Sebagai penjelasan singkat tentang halamanyang dibuat agar lebih mudah diingat dan dipahami terutama oleh personil tim. | Tidak |
+| Urutan Posisi Laman | Daftar halaman pada tampilan end-user akan diurutkan posisi nya berdasarkan masukan ini. Halaman dengan angka Urutan Posisi Laman terkecil akan ditampilkan paling atas. | Ya    |
+| Ikon                | Ikon dari halaman menggunakan Font Awesome yang dapat dipilih [disini](https://fontawesome.com/search?m=free). | Tidak |
+
+ Setelah membuat halaman maka Anda bisa melihat seluruh halaman yang sudah dibuat.
+
+![laman](C:\Users\User\OneDrive\Dokumen\dashboardiot-doc\docs\laman.png)
+
+> Untuk menghapus halaman Anda harus menghapus terlebih dahulu seluruh widget yang ada pada halaman tersebut.
+
+
+
+## Atur Widget
