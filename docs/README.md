@@ -79,7 +79,9 @@ Jika proyek Anda kekurangan token, maka Anda dapat mengubah Token Akun Anda menj
 
 Setelah Anda mengetahui mengenai konsep pada Dashboard, maka dapat disimpulkan melalui diagram berikut.
 
+![konsep](https://github.com/nusabot-iot/dashboardiot-doc/blob/master/docs/konsep.png?raw=true)
 
+Suatu proyek dapat berisi banyak halaman, suatu halaman dapat berisi banyak widget.
 
 # Sidebar
 
