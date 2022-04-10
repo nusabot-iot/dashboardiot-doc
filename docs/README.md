@@ -234,7 +234,7 @@ Setelah Anda mengatur proyek, mengatur halaman, serta mengatur widget maka proye
 
 Jika proyek Anda adalah privat maka pengguna diminta untuk login terlebih dahulu, namun jika proyek adalah publik maka siapapun bisa menggunakannya.
 
-![dashboard](C:\Users\User\OneDrive\Dokumen\dashboardiot-doc\docs\dashboard.png)
+![dashboard](https://github.com/nusabot-iot/dashboardiot-doc/blob/master/docs/dashboard.png?raw=true)
 
 Sebelah kiri adalah menu berupa halaman yang ada pada proyek. Widget dari halaman tersebut akan tampil pada bagian tengah layar.
 
