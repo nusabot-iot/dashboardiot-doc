@@ -221,3 +221,23 @@ Mengirimkan data dari topik tertentu berupa tombol.
 | Warna                    | Warna dari widget yang ingin digunakan.                      | Ya    |
 | Ikon                     | Ikon dari widgetmenggunakan Font Awesome yang dapat dipilih [disini](https://fontawesome.com/search?m=free). | Tidak |
 | Quality of Service (QoS) | QoS yang akan digunakan untuk melakukan subscribe widget ini. | Ya    |
+
+
+
+# Deploy
+
+Setelah Anda mengatur proyek, mengatur halaman, serta mengatur widget maka proyek sudah siap dipublikasikan kepada end-user.
+
+>Untuk melihat proyek Anda maka dapat menggunakan format URL berikut:
+>
+>**```https://dashboard.nusabot.com/{username}/{nama proyek}```**
+
+Jika proyek Anda adalah privat maka pengguna diminta untuk login terlebih dahulu, namun jika proyek adalah publik maka siapapun bisa menggunakannya.
+
+![dashboard](C:\Users\User\OneDrive\Dokumen\dashboardiot-doc\docs\dashboard.png)
+
+Sebelah kiri adalah menu berupa halaman yang ada pada proyek. Widget dari halaman tersebut akan tampil pada bagian tengah layar.
+
+Pojok kiri atas adalah status dari koneksi antara perangkat anda (web browser) dengan broker.
+
+> Status **Terputus** biasanya disebabkan karena kesalahan input data broker pada proyek ataupun ada masalah dengan broker nya. Perangkat Anda langsung terhubung dengan broker tanpa melalui Dashboard, jadi ketika tejadi status Terputus maka kendala bukan timbul dari Dashboard.
