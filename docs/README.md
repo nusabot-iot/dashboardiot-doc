@@ -165,3 +165,59 @@ Anda bisa mengklik tombol atur widget yang ada pada halaman. Disini Anda bisa me
 
 
 # Jenis Widget
+
+## Kotak
+
+![kotak](C:\Users\User\OneDrive\Dokumen\dashboardiot-doc\docs\kotak.png)
+
+**Konsumsi Token: 100**
+
+Menampilkan data dari topik tertentu.
+
+| Properti                 | Keterangan                                                   | Wajib |
+| ------------------------ | ------------------------------------------------------------ | ----- |
+| Urutan / Prioritas       | Widget akan ditampilkan pada setiap halaman, widget dengan nilai urutan / prioritas terkecil akan ditampilkan terlebih dahulu pada halaman. | Ya    |
+| Ukuran                   | Lebar dari widget yang dipilih.                              | Ya    |
+| Subscribe                | Topik yang akan digunakan oleh widget untuk menampilkan data. Diawali dengan topik yang sudah diinputkan pada proyek sebelumnya. | Ya    |
+| Satuan Unit              | Satuan yang akan ditampilkan setelah data. Sebagai contoh widget akan digunakan untuk menampilkan data suhu gudang maka satuan unit bisa diisi dengan ºC. | Tidak |
+| Warna                    | Warna dari widget yang ingin digunakan.                      | Ya    |
+| Ikon                     | Ikon dari widgetmenggunakan Font Awesome yang dapat dipilih [disini](https://fontawesome.com/search?m=free). | Tidak |
+| Quality of Service (QoS) | QoS yang akan digunakan untuk melakukan subscribe widget ini. | Ya    |
+
+
+
+## Info
+
+![Info](C:\Users\User\OneDrive\Dokumen\dashboardiot-doc\docs\info.png)
+
+**Konsumsi Token: 100**
+
+Menampilkan data dari topik tertentu.
+
+| Properti                 | Keterangan                                                   | Wajib |
+| ------------------------ | ------------------------------------------------------------ | ----- |
+| Urutan / Prioritas       | Widget akan ditampilkan pada setiap halaman, widget dengan nilai urutan / prioritas terkecil akan ditampilkan terlebih dahulu pada halaman. | Ya    |
+| Ukuran                   | Lebar dari widget yang dipilih.                              | Ya    |
+| Subscribe                | Topik yang akan digunakan oleh widget untuk menampilkan data. Diawali dengan topik yang sudah diinputkan pada proyek sebelumnya. | Ya    |
+| Satuan Unit              | Satuan yang akan ditampilkan setelah data. Sebagai contoh widget akan digunakan untuk menampilkan data suhu gudang maka satuan unit bisa diisi dengan ºC. | Tidak |
+| Warna                    | Warna dari widget yang ingin digunakan.                      | Ya    |
+| Ikon                     | Ikon dari widgetmenggunakan Font Awesome yang dapat dipilih [disini](https://fontawesome.com/search?m=free). | Tidak |
+| Quality of Service (QoS) | QoS yang akan digunakan untuk melakukan subscribe widget ini. | Ya    |
+
+## Tombol Switch
+
+![Tombol Switch](C:\Users\User\OneDrive\Dokumen\dashboardiot-doc\docs\tombol-switch.png)
+
+**Konsumsi Token: 150**
+
+Mengirimkan data dari topik tertentu berupa tombol.
+
+| Properti                 | Keterangan                                                   | Wajib |
+| ------------------------ | ------------------------------------------------------------ | ----- |
+| Urutan / Prioritas       | Widget akan ditampilkan pada setiap halaman, widget dengan nilai urutan / prioritas terkecil akan ditampilkan terlebih dahulu pada halaman. | Ya    |
+| Ukuran                   | Lebar dari widget yang dipilih.                              | Ya    |
+| Publish                  | Topik yang akan digunakan oleh widget untuk mengirimkan data. | Ya    |
+| Opsi Tombol              | Anda dapat membuat tombol pada widget ini. Sebagai contoh widget ingin digunakan untuk mengendalikan Lampu gudang maka perlu tombol untuk menyalakan lampu dan mematikan lampu. Untuk membuat tombol gunakan format ```topic_1=nilai_1,topic_2=nilai_2,......., topic_n=nilai_n```. Contoh: ```Nyala=1,Mati=0,Otomatis=2```. | Ya    |
+| Warna                    | Warna dari widget yang ingin digunakan.                      | Ya    |
+| Ikon                     | Ikon dari widgetmenggunakan Font Awesome yang dapat dipilih [disini](https://fontawesome.com/search?m=free). | Tidak |
+| Quality of Service (QoS) | QoS yang akan digunakan untuk melakukan subscribe widget ini. | Ya    |
