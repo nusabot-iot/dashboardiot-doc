@@ -168,7 +168,7 @@ Anda bisa mengklik tombol atur widget yang ada pada halaman. Disini Anda bisa me
 
 ## Kotak
 
-![kotak](C:\Users\User\OneDrive\Dokumen\dashboardiot-doc\docs\kotak.png)
+![kotak](https://github.com/nusabot-iot/dashboardiot-doc/blob/master/docs/kotak.png?raw=true)
 
 **Konsumsi Token: 100**
 
@@ -188,7 +188,7 @@ Menampilkan data dari topik tertentu.
 
 ## Info
 
-![Info](C:\Users\User\OneDrive\Dokumen\dashboardiot-doc\docs\info.png)
+![Info](https://github.com/nusabot-iot/dashboardiot-doc/blob/master/docs/info.png?raw=true)
 
 **Konsumsi Token: 100**
 
@@ -206,7 +206,7 @@ Menampilkan data dari topik tertentu.
 
 ## Tombol Switch
 
-![Tombol Switch](C:\Users\User\OneDrive\Dokumen\dashboardiot-doc\docs\tombol-switch.png)
+![Tombol Switch](https://github.com/nusabot-iot/dashboardiot-doc/blob/master/docs/tombol-switch.png?raw=true)
 
 **Konsumsi Token: 150**
 
